@@ -29,6 +29,9 @@ public class UserEntity {
     @Column
     private String roleOfUser;
 
+    @Column
+    private String password;
+
 
     public UserEntity(String nameOfUser){
         this.nameOfUser = nameOfUser;
