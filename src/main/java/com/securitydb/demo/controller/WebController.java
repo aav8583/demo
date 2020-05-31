@@ -31,9 +31,6 @@ public class WebController {
         UserRequests userRequest = new UserRequests(userRequests.getComment(), userEntity.getRequestNumber());
         userService.save(user1);
         requestService.save(userRequest);
-        System.out.println(userEntity.getRequestNumber() + userEntity.getRoleOfUser());
-        System.out.println(user1.getNameOfUser() + " " + user1.getId() + " " + user1.getRoleOfUser() + " " + user1.getRequestNumber());
-        System.out.println(userRequest.getId() + " " + userRequest.getComment() + " " + userRequest.getNumberOfRequest());
         return "result";
     }
 

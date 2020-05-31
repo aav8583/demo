@@ -4,7 +4,6 @@ package com.securitydb.demo.controller;
 import com.securitydb.demo.dao.UserService;
 import com.securitydb.demo.model.UserEntity;
 import com.securitydb.demo.repository.UserRepository;
-import com.securitydb.demo.security.AuthProviderImpl;
 import com.securitydb.demo.utils.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -14,7 +13,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 
 @Controller
 public class AuthController {
