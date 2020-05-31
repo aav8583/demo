@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<h1>Form</h1>
+<h1>Greeting Form</h1>
 <form action="#" th:action="@{/greeting}" th:object="${userEntity}" method="post">
     <p>Name: <input type="text" th:field="*{nameOfUser}" /></p>
     <p>Comment to request: <input type="text" th:object="${userRequest}" th:field="*{comment}" /></p>

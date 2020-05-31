@@ -25,7 +25,7 @@ public class AuthController {
 
     @RequestMapping("/login")
     public String login() {
-        return "/sign_in";
+        return "sign_in";
     }
 
     @GetMapping("/sign_in")
@@ -35,7 +35,8 @@ public class AuthController {
     }
 
     @PostMapping("/sign_in")
-    public String signIn(@ModelAttribute UserEntity userEntity){
+    public String signIn(@ModelAttribute UserEntity userEntity, Model model){
+        model.addAttribute("userEntity", userEntity);
         UserEntity userEntityDB = userRepository.findByNameOfUser(userEntity.getNameOfUser());
         if (userEntityDB == null){
             throw new UsernameNotFoundException("User not exist");
