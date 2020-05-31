@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Sign Up</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/sign_in}" th:object="${userEntity}" method="post">
+    <p>Name: <input type="text" th:field="*{nameOfUser}" /></p>
+    <p>Password: <input type="password" th:field="*{password}" /></p>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+</body>
+</html>
+
+
+
