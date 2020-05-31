@@ -23,9 +23,10 @@ public class AuthController {
     UserValidator userValidator;
     UserRepository userRepository;
 
+
     @RequestMapping("/login")
     public String login() {
-        return "sign_in";
+        return "login";
     }
 
     @GetMapping("/sign_in")
